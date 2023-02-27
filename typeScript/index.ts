@@ -1,5 +1,7 @@
 const Name = "Cumilla Polytechnic Institute"; 
-const Students = 4000; 
-const Stipen = 4000; 
-const totalAmounts = (4000 * 0.7)* 4000; 
-console.log(totalAmounts); 
+console.log(Name); 
+
+const Language = "Typescript"; 
+const reason = "typescript is an super script of javascript. It's helps us to main types in javascript."; 
+
+console.log(reason); 

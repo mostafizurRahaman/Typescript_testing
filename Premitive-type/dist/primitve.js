@@ -26,3 +26,12 @@ isSister = 2;
 isSister = true;
 isSister = NaN; // allows because the type of NaN is number 
 isSister = []; // gives errors because the type is array . array is not allows here . 
+/*
+Const Issus:const variable think the values as a type of the const variable ;
+
+1. If we don't  set type explicitly , The variable set it's value as a type.
+
+*/
+const Name1 = "sajib"; // the type is now sojib  
+const Name2 = "Sakib";
+const Name3 = "trainingMug";

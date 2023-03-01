@@ -27,3 +27,5 @@ conditional = ["mostafiz", "hridoy hossain", "Ismail hossain"]; // correct
 conditional = [1, 3, 4, 5]; //correct 
 conditional = [true, false]; // correct
 console.log(conditional);
+let tuple1; // tuple is an array of fixed size . and it's every fileds data have a fixed type.
+tuple1 = ["mostafiz", true, "hridoy", 1, 3];

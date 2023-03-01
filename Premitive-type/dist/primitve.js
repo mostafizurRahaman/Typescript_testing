@@ -25,7 +25,7 @@ isSister = 'two';
 isSister = 2;
 isSister = true;
 isSister = NaN; // allows because the type of NaN is number 
-isSister = []; // gives errors because the type is array . array is not allows here . 
+// isSister = [] // gives errors because the type is array . array is not allows here . 
 /*
 Const Issus:const variable think the values as a type of the const variable ;
 

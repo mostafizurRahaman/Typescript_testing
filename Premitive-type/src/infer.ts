@@ -31,4 +31,4 @@ console.log(d);
 
 // so we need to infer when we declare and assign  the variable two different line. 
 
-console.log("Typescript ")
+console.log("Typescript "); 

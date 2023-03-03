@@ -1,18 +1,20 @@
-/* TypeScript Object && Enums Types  */
-
-let person: {
-   name: string;
-   age?: number;
-   isStudent: boolean;
-   skills?: string[];
-};
+let person : {
+   name: string, 
+   age?: number, 
+   isMarried : boolean, 
+   friends?:string[]
+}; 
 
 person = {
-   name: "Hridoy Hossain",
-   // age: 20,
-   isStudent: true,
-   skills: ["html", "Css", "JavaScript", "Digital Marketing"],
-};
-const age = person.age! + 5; 
-person.skills = person?.skills?.map((a: string) => a.toUpperCase());
-console.log(person);
+   name: "Mostafizur Rahaman", 
+   age: 20, 
+   isMarried: true, 
+   friends: ["hridoy", "ismail", "rakibul"]
+}
+
+
+person.friends = person.friends?.map(p => p.toUpperCase()); 
+console.log(person.friends); 
+person.age = person.age! + 5; 
+console.log(person); 
+

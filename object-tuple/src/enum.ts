@@ -1,16 +1,9 @@
-// TypeScript Enums :
-
-enum Friends1 {
-   Hridoy,
-   Ratul,
-   Mostafiz,
-}
-enum Friends {
-   Hridoy = 30,
-   Ratul = 50,
-   Mostafiz = 51,
+enum Frineds {
+   Arif=1, 
+   Ratan=5, 
+   Kamal=9, 
+   Rakib=0
 }
 
-console.log(Friends[30]);
-console.log(Friends[50]);
-console.log(Friends[51]);
+console.log(Frineds.Arif); 
+console.log(Frineds[5]); 

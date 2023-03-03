@@ -1,36 +1,61 @@
 "use strict";
-// function add(num1: number, num2: number):{num1:number, num2:number}{
-//    return {num1, num2}
-// }
-// const result:{num1:number, num2:number} = add(19, 39); 
-// console.log(result); 
-// function add(first:string, last:string):string{
-//    return first + " " + last; 
-// }
-// const fullName : string = add("Mostafiz", "Rahaman"); 
-// console.log(fullName); 
-// const add = function  (n1:number, n2:number):number {
-//    return n1 + n2; 
-// }
-// const result = add(1, 3);
-// console.log(result); 
-// const add  = (a:number):number => a; 
-// const result:number = add(10); 
-// console.log(result); 
-// const add  =(a1:number, a2:number , a3?:number):number =>{
-//    return a1 + a2 + (a3 || 0); 
-// }
-// const result:number = add(2, 4); 
-// const add = (a1:number, a2:number, a3:number = 5):number => {
-//    return a1 + a2 + a3;
-// }
-// console.log(add(1, 3)); // result = 9 
-// console.log(add(1,3,3)); // result = 7 
-// Rest Operator : 
-const add = (...numbers) => {
-    const func = (pre, cur) => pre + cur;
-    return numbers.reduce(func, 0);
+// Return Type Void : void means return no values.
+function normal() {
+    console.log("normal");
+}
+// Return Type number
+function add(a1, a2) {
+    return a1 + a2;
+}
+console.log(add(20, 28));
+// Return Type string
+function fullName(a1, a2) {
+    return a1 + " " + a2;
+}
+console.log(fullName("Mostafizur", "Rahaman"));
+// Function Expression
+const subtraction = function (a1, a2) {
+    return a1 - a2;
 };
-console.log(add(1, 3, 4, 5, 6, 7, 8889));
-console.log(add(1, 3, 4, 5, 6, 6, 7, 89));
-// 
+console.log(subtraction(2, 1));
+// Arrow Function
+const show = (a) => a;
+console.log(show(7));
+// Optional Parameters :
+const multiplication = (a, b, c1) => {
+    return a + b + (c1 || 1);
+};
+//  Default parameter :
+const totalAmount = (rice, bannana, tea = 0) => {
+    return rice + bannana + tea;
+};
+console.log("ratan", totalAmount(100, 20));
+console.log(totalAmount(19, 30, 30));
+//  Rest parameter:
+const RestParameter = (...numbers) => {
+    return numbers.reduce((pre, cur) => pre + cur, 0);
+};
+console.log(RestParameter(1, 2, 7, 7, 8, 88, 888, 8899, 772));
+// CallBack Function
+const jog = (a1, b2) => a1 + b2;
+const totalResult = (a, a1, b1) => a(a1, b1);
+console.log(totalResult(jog, 4, 5));
+// //  Function Signature :
+// const addition: (a1: number, a2: number) => number = (a1, a2) => {
+//    return a1 + a2;
+// };
+// console.log(addition(10, 20));
+// // function signature :
+// let generateName:(a:string,b:string, c?:string) => string ; 
+// // function declaration: 
+// generateName = (a, b, c) => {
+//    return a + " " + b + " " + (c || " "); 
+// }
+//  call and console the function : 
+// console.log(generateName("Mostafizur", "Rahaman", "Fahim")); 
+// function signature :
+let generateName = (a, b, c) => {
+    return a + " " + b + " " + (c || " ");
+};
+//  call and console the function : 
+console.log(generateName("Mostafizur", "Rahaman", "Fahim"));

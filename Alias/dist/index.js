@@ -38,3 +38,9 @@ const add /*function signature is use */ = (n1, n2) => {
     return n1 + n2;
 };
 console.log(add(29, 38));
+const people = {
+    a1: 2,
+    a2: 4,
+    a3: 5,
+    a4: 8,
+};

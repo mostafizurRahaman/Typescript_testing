@@ -81,3 +81,25 @@ const add : Add /*function signature is use */ = (n1, n2) => {
 }
 
 console.log(add(29, 38)); 
+
+
+//  Extends in Type Alias : Extends on Types to another with & operator :
+ 
+
+type parent = {
+   a1: number; 
+   a2: number; 
+}
+
+
+type children = {
+   a3: number; 
+   a4: number; 
+} & parent; 
+
+const people: children = {
+   a1: 2, 
+   a2: 4, 
+   a3: 5, 
+   a4: 8, 
+}
